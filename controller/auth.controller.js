@@ -5,7 +5,7 @@ const createUser = async (req, res) => {
     const user = await admin.auth().createUser({
       email: email,
       phoneNumber: phoneNumber,
-      password: password,
+      password: password, 
       displayName: `${firstName} ${lastName}`,
       photoURL: photoUrl
     });

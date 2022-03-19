@@ -5,7 +5,8 @@ const indexRouter = express.Router();
 
 /* GET home page. */
 indexRouter.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  // res.render('index', { title: 'Express' });
+  res.send('Server Working on http://localhost:3000')
 });
 
 indexRouter.post('/auth/signup', createUser);
