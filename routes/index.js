@@ -1,6 +1,8 @@
 import express from 'express';
 import createUser from '../controller/auth.controller.js';
 import checkIfAuthenticated from '../middleware/auth.js';
+import sendTestData from '../controller/testData.controller.js'
+
 const indexRouter = express.Router();
 
 /* GET home page. */
@@ -17,5 +19,7 @@ indexRouter.get('/articles', checkIfAuthenticated, async (_, res) => {
     "closing":76067
   });
 });
+
+indexRouter.get('/test', sendTestData)
 
 export default indexRouter;

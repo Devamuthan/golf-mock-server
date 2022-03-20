@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node bin/www.js"
+    "start": "node bin/www.js",
+    "node": "node bin/www.js | pino-pretty"
   },
   "babel": {
     "presets": [
@@ -18,8 +19,14 @@
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
+    "dummy-json": "^3.0.4",
     "express": "~4.16.1",
+    "express-pino-logger": "^7.0.0",
     "firebase-admin": "^10.0.2",
-    "morgan": "~1.9.1"
+    "pino": "^7.9.1",
+    "pino-pretty": "^7.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
