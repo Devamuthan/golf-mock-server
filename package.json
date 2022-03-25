@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node bin/www.js",
-    "node": "node bin/www.js | pino-pretty"
+    "node": "node bin/www.js | pino-pretty",
+    "dev": "nodemon bin/www.js | pino-pretty"
   },
   "babel": {
     "presets": [
