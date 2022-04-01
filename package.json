@@ -1,33 +1,32 @@
 {
-  "name": "ecstest",
-  "version": "0.0.0",
-  "private": true,
+  "name": "golf-mock-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "node bin/www.js",
-    "node": "node bin/www.js | pino-pretty",
-    "dev": "nodemon bin/www.js | pino-pretty"
+    "serve": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devamuthan/golf-mock-server.git"
   },
-  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devamuthan/golf-mock-server/issues"
+  },
+  "homepage": "https://github.com/Devamuthan/golf-mock-server#readme",
   "dependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.7",
-    "@babel/preset-env": "^7.16.11",
-    "cookie-parser": "~1.4.4",
+    "body-parser": "^1.19.2",
     "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "dummy-json": "^3.0.4",
-    "express": "~4.16.1",
-    "express-pino-logger": "^7.0.0",
-    "firebase-admin": "^10.0.2",
-    "pino": "^7.9.1",
-    "pino-pretty": "^7.5.4"
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.17.0"
   },
   "devDependencies": {
+    "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
   }
 }
